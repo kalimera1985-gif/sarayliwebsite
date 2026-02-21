@@ -3,4 +3,4 @@ Allow: /
 Disallow: /CNAME
 Disallow: /.github/
 Disallow: /README.md
-Sitemap: https://kalimera1985-gif.github.io/sarayliwebsite/sitemap.xml
+Sitemap: https://alashfamily.kz/sitemap.xml
