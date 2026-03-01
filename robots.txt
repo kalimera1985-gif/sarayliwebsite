@@ -1,6 +1,10 @@
 User-agent: *
 Allow: /
-Disallow: /CNAME
-Disallow: /.github/
-Disallow: /README.md
+
+Disallow: /cgi-bin/
+Disallow: /tmp/
+Disallow: /admin/
+Disallow: /login/
+Disallow: /private/
+
 Sitemap: https://alashfamily.kz/sitemap.xml
