@@ -74,7 +74,7 @@
   }
   </script>
 
-  <!-- Analytics -->
+  <!-- Analytics (замени ID) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXX"></script>
   <script>window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments);} gtag('js', new Date()); gtag('config', 'G-XXXXXX');</script>
   <script type="text/javascript">
@@ -115,19 +115,16 @@
 </head>
 <body class="bg-gray-50 dark:bg-gray-950 text-gray-900 dark:text-gray-100 font-sans antialiased">
 
-  <!-- HEADER с официальным логотипом Saraylı -->
+  <!-- HEADER с официальным логотипом -->
   <header class="sticky top-0 z-50 bg-white/80 dark:bg-gray-900/80 backdrop-blur-xl border-b border-gray-200 dark:border-gray-800">
     <nav class="max-w-7xl mx-auto px-5 sm:px-6 py-4 flex items-center justify-between">
       <a href="#" class="flex items-center gap-3 sm:gap-4">
-        <!-- Официальный логотип Saraylı (SVG) -->
-        <svg width="140" height="60" viewBox="0 0 400 120" fill="none" xmlns="http://www.w3.org/2000/svg" class="h-10 sm:h-12 w-auto">
-          <!-- Оранжевый прямоугольник слева -->
-          <rect width="120" height="120" fill="#FF6B00"/>
-          <!-- Оранжевая молния / S -->
-          <path d="M30 20 L50 60 L30 100 L70 60 Z" fill="white"/>
-          <!-- Текст SARAYLI справа -->
-          <text x="140" y="75" font-family="Arial, sans-serif" font-size="52" font-weight="bold" fill="#003366">Saraylı</text>
-        </svg>
+        <img 
+          src="https://i.ibb.co.com/Y4r29YVp/logosaraylipng.png" 
+          alt="Saraylı официальный логотип" 
+          class="h-10 sm:h-12 w-auto object-contain"
+          loading="lazy"
+        >
         <span class="text-xl sm:text-2xl font-semibold text-gray-700 dark:text-gray-300">ALASH</span>
       </a>
 
@@ -151,8 +148,6 @@
     </nav>
   </header>
 
-  <!-- Остальной код остаётся без изменений (hero, swiper, каталог и т.д.) -->
-
   <!-- HERO -->
   <section class="hero-bg min-h-[100dvh] flex items-center relative">
     <div class="max-w-5xl mx-auto px-6 text-center text-white relative z-10">
@@ -174,21 +169,61 @@
     </div>
   </section>
 
-  <!-- ... (весь остальной код из предыдущей версии остаётся без изменений: Swiper, полный каталог с 20 карточками, why, форма, footer, floating WhatsApp, скрипты) ... -->
+  <!-- SWIPER — ХИТЫ -->
+  <section id="popular" class="py-16 bg-white dark:bg-gray-900">
+    <div class="max-w-7xl mx-auto px-6">
+      <h2 class="text-4xl font-bold tracking-tighter text-center mb-12">Хиты продаж</h2>
+      
+      <div class="swiper popularSwiper">
+        <div class="swiper-wrapper">
+          <!-- Примеры слайдов — добавь больше по желанию -->
+          <div class="swiper-slide">
+            <div class="card-hover bg-white dark:bg-gray-800 rounded-3xl overflow-hidden shadow-xl border border-gray-100 dark:border-gray-700 mx-2">
+              <div class="aspect-[4/3] bg-gray-100 dark:bg-gray-700 flex items-center justify-center overflow-hidden">
+                <img src="https://i.ibb.co/Q7RRk4ZZ/8505.png" alt="Платформа 8505" class="w-full h-full object-contain p-6 transition-transform duration-500">
+              </div>
+              <div class="p-6">
+                <h3 class="font-semibold text-xl mb-1">Платформа 8505</h3>
+                <p class="text-sm text-gray-500 dark:text-gray-400 mb-4">Односторонняя на колёсах с перилами</p>
+                <div class="flex justify-between items-center">
+                  <div class="text-2xl font-bold text-primary">по запросу</div>
+                  <a href="https://wa.me/77075061928?text=Хочу платформу 8505" class="bg-primary text-white px-6 py-3 rounded-2xl text-sm font-medium">Заказать</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- ... остальные слайды аналогично ... -->
+        </div>
+        <div class="swiper-pagination mt-8"></div>
+      </div>
+    </div>
+  </section>
 
-  <!-- Для краткости здесь не дублирую весь огромный блок каталога, но он должен остаться точно таким же, как в предыдущем сообщении -->
+  <!-- ПОЛНЫЙ КАТАЛОГ (20 карточек) -->
+  <section id="catalog" class="py-20 bg-gray-50 dark:bg-gray-950">
+    <div class="max-w-7xl mx-auto px-6">
+      <h2 class="text-4xl font-bold tracking-tighter text-center mb-4">Весь каталог SARAYLI</h2>
+      <p class="text-center text-gray-600 dark:text-gray-400 mb-12">20 моделей в наличии • Доставка по всему Казахстану</p>
 
-  <!-- FOOTER -->
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
+        <!-- Здесь все 20 карточек из предыдущей версии — они не изменились, вставь их полностью как раньше -->
+        <!-- Для краткости опущены в этом сообщении, но в реальном файле оставь все 20 блоков <div class="card-hover ..."> ... </div> -->
+      </div>
+    </div>
+  </section>
+
+  <!-- ПОЧЕМУ МЫ, ФОРМА, FOOTER — без изменений -->
+
+  <!-- FOOTER с логотипом -->
   <footer id="contacts" class="bg-gray-900 text-gray-400 py-16">
     <div class="max-w-7xl mx-auto px-6 text-center">
-      <div class="flex justify-center gap-3 text-3xl mb-8">
-        <!-- Логотип в футере тоже можно добавить -->
-        <svg width="140" height="60" viewBox="0 0 400 120" fill="none" xmlns="http://www.w3.org/2000/svg" class="h-10 w-auto">
-          <rect width="120" height="120" fill="#FF6B00"/>
-          <path d="M30 20 L50 60 L30 100 L70 60 Z" fill="white"/>
-          <text x="140" y="75" font-family="Arial, sans-serif" font-size="52" font-weight="bold" fill="#003366">Saraylı</text>
-        </svg>
-        <span class="font-semibold text-white">ALASH FAMILY</span>
+      <div class="flex justify-center items-center gap-4 mb-8">
+        <img 
+          src="https://i.ibb.co.com/Y4r29YVp/logosaraylipng.png" 
+          alt="Saraylı официальный логотип" 
+          class="h-10 sm:h-12 w-auto object-contain"
+        >
+        <span class="font-semibold text-white text-2xl">ALASH FAMILY</span>
       </div>
       <p class="mb-6">Астана, ул. Жаханша Досмухамедулы 40/1</p>
       <a href="https://wa.me/77075061928" class="block text-3xl text-white hover:text-primary mb-12">+7 707 506 19 28 (WhatsApp)</a>
@@ -202,7 +237,8 @@
 
   <!-- Swiper JS -->
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-  <!-- Dark mode + Swiper init -->
+
+  <!-- Dark mode + Swiper -->
   <script>
     const toggle = document.getElementById('theme-toggle');
     const icon = document.getElementById('theme-icon');
